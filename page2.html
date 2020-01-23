@@ -1,0 +1,23 @@
+<html>
+    <script type="text/javascript">
+    function sent(form)
+    {
+        if(form.Emailid.value=="")
+        {
+            alert("please enter your email id!!!!!!");
+            return false;
+        }else{
+            alert("your password is sent to your mail id");
+            return true;
+        }
+    }
+    </script>
+    <body style="background: chocolate;">
+    <form onsubmit="sent(this)">
+    <h1>Email ID:</h1>
+    <input type="email" name="Emailid" placeholder="enter email id">
+    <input type="submit" value="submit">
+    <input type="reset" value="cancel">
+    </form>
+    </body>
+</html>
